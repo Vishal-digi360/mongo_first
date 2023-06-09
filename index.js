@@ -5,6 +5,8 @@ import cors from "cors";
 import connectDB from "./mongodb/connect.js"
 
 import userRouter from "./routes/userRoutes.js"
+import ProductRouter from "./routes/productRoutes.js"
+
 
 
 
@@ -20,6 +22,8 @@ app.get("/", (req, res) => {
 
 
 app.use('/users', userRouter);
+app.use('/product', ProductRouter);
+
 
 
 

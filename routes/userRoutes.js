@@ -12,7 +12,4 @@ router.route("/:id").patch(updateUserEmail)
 
 
 
-
-
-
 export default router
